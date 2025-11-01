@@ -22,24 +22,18 @@
             </nav>
         </div>
     </header>
-
-        
-        <div class="volunteer-form">
+        <div class="form">
             <h1>Volunteer with Us</h1>
             <form action="thankyou.html" method="post">
-                <table class="volunteer-form-table">
-                    
-                    <!-- First Name -->
+                <table class="form-table">
                     <tr>
-                        <td class="volunteer-form-td">
+                        <td>
                             <label for="First_Name">First Name:</label>
                         </td>
                         <td>
                             <input type="text" id="First_Name" name="First_Name" required>
                         </td>
                     </tr>
-                    
-                    <!-- Last Name -->
                     <tr>
                         <td>
                             <label for="Last_Name">Last Name:</label>
@@ -48,8 +42,6 @@
                             <input type="text" id="Last_Name" name="Last_Name" >
                         </td>
                     </tr>
-
-                    <!-- Email -->
                     <tr>
                         <td>
                             <label for="Email">Email:</label>
@@ -58,8 +50,6 @@
                             <input type="text" id="Email" name="Email" required>
                         </td>
                     </tr>
-
-                    <!-- Phone Number -->
                     <tr>
                         <td>
                             <label for="Phone_Number">Phone Number:</label>
@@ -68,8 +58,6 @@
                             <input type="text" id="Phone_Number" name="Phone_Number" required>
                         </td>
                     </tr>
-                    
-                    <!-- Date of Birth -->
                     <tr>
                         <td>
                             <label for="date_of_Birth">Date of Birth:</label>
@@ -78,8 +66,6 @@
                             <input type="date" id="date_of_Birth" name="date_of_Birth" required>
                         </td>
                     </tr>
-                    
-                    <!-- Gender -->
                     <tr>
                         <td>
                             <label for="Gender">Gender:</label>
@@ -89,10 +75,10 @@
                             <label for="Male">Male</label>
                             <input type="radio" id="Female" name="Gender" value="Female" required>
                             <label for="Female">Female</label>
+                            <input type="radio" id="not-prefered" name="Gender" value="not-prefered" required>
+                            <label for="Other">not prefered</label>
                         </td>
                     </tr>
-                    
-                    <!-- Nationality -->
                     <tr>
                         <td>
                             <label for="nationality">Nationality:</label>
@@ -113,8 +99,6 @@
                             </select>
                         </td>
                     </tr>
-                    
-                    <!-- Skills -->
                     <tr>
                         <td>
                             <label for="skills">Skills and Interests:</label>
@@ -127,8 +111,6 @@
                             <label><input type="checkbox" name="skills[]" value="fundraising"> Fundraising & Events</label><br>
                         </td>
                     </tr>
-                    
-                    <!-- Comments -->
                     <tr>
                         <td>
                             <label for="comments">Comments:</label>
@@ -137,15 +119,11 @@
                             <textarea id="comments" name="comments" rows="5" placeholder="Enter your comments here"></textarea>
                         </td>
                     </tr>
-                    
-                    <!-- Submit Button -->
                     <tr>
-                        <td></td> <!-- Empty cell for alignment -->
-                        <td>
+                        <td colspan="2">
                             <input type="submit" value="Submit">
                         </td>
-                    </tr> <!-- Added closing tag -->
-                    
+                    </tr>
                 </table>
             </form>
         </div>

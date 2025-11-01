@@ -48,8 +48,6 @@ a:hover {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .footer {
@@ -70,22 +68,26 @@ footer a {
     margin-bottom: 10px;   
 }
 
+.main-nav a {
+    margin-left: 20px;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* volunteer form */
-.volunteer-form {
+/* forms */
+.form {
     width: 100%;
     padding: 40px;
     background-color: #F8FAFC;
 }
 
-.volunteer-form-table {
+.form-table {
     border-collapse: collapse;
 }
-.volunteer-form-table td {
+.form-table td {
     padding: 10px;
 }
 
