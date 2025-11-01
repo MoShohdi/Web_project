@@ -66,6 +66,7 @@ a:hover {
     width: 40%;
     height: auto;
     align-self: center;
+    padding: 20px;
 }
 /* header and footer */
 .header {
@@ -129,8 +130,9 @@ footer a {
 /* forms */
 
 .form-table {
-    border-collapse: collapse;
+    padding: 20px;
 }
+
 .form-table td {
     padding: 10px;
 }
