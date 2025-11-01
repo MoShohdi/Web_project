@@ -1,10 +1,8 @@
 
 /* color pallete
-  * Sky Blue: #0284C7 (For links and headers)
-  * Warm Orange: #F59E0B (For buttons)
+  * Sky Blue: #0284C7 (For links and headers and buttons)
   * Dark Grey Text: #333333 (For all paragraphs)
   * Very Light Grey: #F8FAFC (For the page background)
-  * Pure White: #FFFFFF (For the content area background)
 */
 
 /* general use */
@@ -13,6 +11,26 @@ body {
     line-height: 1.6;
     background-color: #F8FAFC;
     color: #333333;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.btn{
+    background-color: #0284C7;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FD7B38;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,7 +57,10 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #FFFFFF;
+    background-color: #F8FAFC;
+    height: auto;
+
+    flex-grow: 1;
 }
 
 /* header and footer */
