@@ -41,14 +41,16 @@ a:hover {
     background-color: #FFFFFF;
 }
 
-header {
+.header {
     background-color: #FFFFFF;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-footer {
+.footer {
     background-color: #333333;
     color: #FFFFFF;
     padding: 30px 20px;
@@ -56,15 +58,14 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: #FFFFFF;
+}
 
 .logo h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;   
-}
-
-footer a {
-    color: #FFFFFF;
 }
 
 img {
