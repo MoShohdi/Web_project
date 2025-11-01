@@ -33,6 +33,7 @@ body {
     cursor: pointer;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     color: #0284C7;
     font-weight: bold;
@@ -55,8 +56,7 @@ a:hover {
 
 .container {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #F8FAFC;
     height: auto;
     flex-grow: 1;
@@ -68,6 +68,8 @@ a:hover {
     align-self: center;
     padding: 20px;
 }
+
+
 /* header and footer */
 .header {
     background-color: #FFFFFF;
