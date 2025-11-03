@@ -71,6 +71,13 @@ a:hover {
     text-align: center;
 }
 
+.team-img{
+    width: 140px;
+    height: auto;
+    align-self: center;
+    border-radius: 20%;
+}
+
 
 /* header and footer */
 .header {
