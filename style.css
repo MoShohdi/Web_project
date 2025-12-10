@@ -1,24 +1,24 @@
-
 /* color pallete
   * Sky Blue: #0284C7 (For links and headers and buttons)
   * Dark Grey Text: #333333 (For all paragraphs)
   * Very Light Grey: #F8FAFC (For the page background)
 */
 
+
 /* general use */
+
 body {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.6;
     background-color: #F8FAFC;
     color: #333333;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.btn{
+.btn {
     background-color: #0284C7;
     color: #FFFFFF;
     padding: 10px 15px;
@@ -26,13 +26,17 @@ body {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #FD7B38;
     color: #FFFFFF;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #0284C7;
     font-weight: bold;
     margin-top: 20px;
@@ -67,11 +71,11 @@ a:hover {
     padding: 20px;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.team-img{
+.team-img {
     width: 140px;
     height: auto;
     align-self: center;
@@ -80,6 +84,7 @@ a:hover {
 
 
 /* header and footer */
+
 .header {
     background-color: #FFFFFF;
     padding: 20px;
@@ -101,21 +106,22 @@ footer a {
 .logo h1 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10x;   
+    margin-bottom: 10x;
 }
 
 .main-nav a {
     margin-left: 20px;
 }
 
-.socials img{
+.socials img {
     width: 22px;
     height: 22px;
     padding-top: 5px;
 }
-    
+
 
 /* home */
+
 .hero-img {
     width: 100%;
     margin-bottom: 20px;
@@ -124,10 +130,8 @@ footer a {
 .home-table {
     margin-bottom: 20px;
     border-spacing: 60px;
-
     /* centers the table */
     align-self: center;
-    
     /* makes the table fixed width and td same*/
     table-layout: fixed;
     width: 100%;
@@ -141,11 +145,12 @@ footer a {
     background-color: #e9e9e9;
 }
 
-.home-p{
+.home-p {
     font-size: 18px;
     text-align: center;
     padding: 20px;
 }
+
 
 /* forms */
 
@@ -157,13 +162,15 @@ footer a {
     padding: 10px;
 }
 
+
 /* programs */
-.programs a{
+
+.programs a {
     color: #333333;
     text-decoration: none;
 }
 
-.programs a:hover{
+.programs a:hover {
     text-decoration: underline;
     color: #0284C7;
 }
