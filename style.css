@@ -25,9 +25,10 @@ body {
 .btn {
     background-color: #0284C7;
     color: #FFFFFF;
-    padding: 10px 15px;
-    border-radius: 100px;
+    padding: 5px 10px;
+    border-radius: 20px;
     cursor: pointer;
+    border: 8px solid #0284C7;
 }
 
 .btn:hover {
@@ -178,11 +179,20 @@ footer a {
 
 /* forms */
 
-.form-table {
-    padding: 20px;
+#table tr:hover td {
+    background-color: #7cd3ff;
+    cursor: pointer;
 }
 
-.form-table td {
+#table {
+    margin-top: 20px;
+}
+
+#table tr {
+    text-align: center;
+}
+
+#table td {
     padding: 10px;
 }
 
