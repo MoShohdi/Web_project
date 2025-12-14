@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js"></script>
+    <script src="../js/pages.js"></script>
 </head>
 
 <body>
@@ -131,9 +132,49 @@
                 </ul>
             </nav>
 
-            <div class="col-lg-10 col-md-9 p-4 ">
-                <h2>Welcome to the Seed of Hope Backend</h2>
-                <p>Use the navigation bar on the left to manage the operaions within our company.</p>
+            <div class="col-lg-10 col-md-10 p-4">
+                <div class="card-body p-4 shadow-sm rounded">
+                    <h2>Pages</h2>
+                    <p>Use the table below to manage the data within the pages of the website</p>
+                    <table class="table table-striped table-hover" id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>URL</th>
+                            <th>Title</th>
+                            <th>Displayed</th>
+                        </tr>
+                        <tr data-page-number="1">
+                            <td>1</td>
+                            <td>index.html</td>
+                            <td>Home</td>
+                            <td>
+                                <div class="mb-3 form-check form-switch d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="programActiveToggle" checked>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-page-number="2">
+                            <td>2</td>
+                            <td>about.html</td>
+                            <td>about</td>
+                            <td>
+                                <div class="mb-3 form-check form-switch d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="programActiveToggle" checked>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-page-number="3">
+                            <td>3</td>
+                            <td>contact.html</td>
+                            <td>contact</td>
+                            <td>
+                                <div class="mb-3 form-check form-switch d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="programActiveToggle" checked>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
         </div>
