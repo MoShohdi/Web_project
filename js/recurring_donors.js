@@ -15,8 +15,8 @@ window.onload = function() {
 // check the empty input
 function checkEmptyInput() {
     var isEmpty = false,
-        email = input1.value,
-        full_name = input2.value,
+        full_name = input1.value,
+        email = input2.value,
         monthly_donations = input3.value;
     donation_date = input4.value;
 
