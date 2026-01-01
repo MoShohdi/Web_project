@@ -10,9 +10,10 @@ window.onload = function() {
 function saveThemeSettings() {
     const themeData = {
         color: document.getElementById('primaryColor').value,
+        secondaryColor: document.getElementById('secondaryColor').value,
         font: document.getElementById('fontChoice').value,
         logo: document.getElementById('logoUrl').value
     };
 
-    alert("Theme color has been updated to " + themeData.color + "\nFont has been updated to " + themeData.font + "\nLogo has been updated to " + themeData.logo);
+    alert("Primary Theme color has been updated to " + themeData.color + "\nSecondary Theme color has been updated to " + themeData.secondaryColor + "\nFont has been updated to " + themeData.font + "\nLogo has been updated to " + themeData.logo);
 }
