@@ -4,8 +4,8 @@ var table, input1, input2, input3, input4, rIndex;
 window.onload = function() {
     rIndex;
     table = document.getElementById("table");
-    input1 = document.getElementById("email");
-    input2 = document.getElementById("full_name");
+    input2 = document.getElementById("email");
+    input1 = document.getElementById("full_name");
     input3 = document.getElementById("monthly_donations");
     input4 = document.getElementById("donation_date");
     selectedRowToInput();
