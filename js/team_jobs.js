@@ -31,6 +31,7 @@ function applyRoleChange() {
     alert("Role updated successfully for " + document.getElementById('selectedName').value);
 }
 
+// Clears form
 function clearForm() {
     currentId = null;
     document.getElementById('selectedName').value = "";

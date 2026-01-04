@@ -1,20 +1,7 @@
+function goToPage(id) {
+    window.location.href = "pages" + id + ".html";
+}
 window.onload = function() {
-    const table = document.getElementById('table');
-    if (table) {
-        const rows = table.querySelectorAll('tbody tr');
-        // sellect row and numbers each row
-        for (let i = 0; i < rows.length; i++) {
-            const row = rows[i];
-
-            //makes the row clickable and links each row to data-page-number
-            row.onclick = function() {
-                const pageId = row.getAttribute('data-page-number');
-                if (pageId) {
-                    window.location.href = "pages" + pageId + ".html";
-                }
-            };
-        }
-    }
 
     // Pages1
     const title1 = document.getElementById('title1');

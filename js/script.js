@@ -15,3 +15,34 @@ function login() {
         alert("email or password is incorrect");
     }
 }
+
+function validatePayment() {
+
+    let paymentMethods = document.getElementsByName("payment");
+    let selected = false;
+
+    for (let i = 0; i < paymentMethods.length; i++) {
+        if (paymentMethods[i].checked) {
+            selected = true;
+        }
+    }
+
+    if (selected == false) {
+        alert("Please select a payment method");
+        return false;
+    }
+}
+
+function validatePreferences() {
+    let prefs = document.getElementsByName("preferences");
+    let selected = false;
+    for (let i = 0; i < prefs.length; i++) {
+        if (prefs[i].checked) {
+            selected = true;
+        }
+    }
+    if (selected == false) {
+        alert("Please select at least one preference");
+        return false;
+    }
+}
