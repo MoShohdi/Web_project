@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="../js/script.js"></script>
-    <script src="../js/team_members.js"></script>
+    <script src="../js/img_settings.js"></script>
 </head>
 
 <body>
@@ -131,68 +131,58 @@
                 </ul>
             </nav>
 
-            <div class="col-lg-6 col-md-6 p-4 ">
-                <div class="card p-4 shadow-sm">
-                    <h2>Team Members</h2>
-                    <table class="table table-striped table-hover table-bordered" id="table">
+            <div class="col-lg-10 col-md-10 p-4">
+                <div class="card-body p-4 shadow-sm rounded">
+                    <h2>Image Settings</h2>
+                    <p>Use the table below to manage the data within the images of the website</p>
+                    <table class="table table-striped table-hover" id="table">
                         <tr>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
                             <th>ID</th>
+                            <th>Name</th>
+                            <th>Width</th>
+                            <th>Height</th>
+                            <th>Displayed</th>
                         </tr>
-                        <tr>
-                            <td>Maged El-Sherbeeny</td>
-                            <td>maged@info.com</td>
-                            <td>01001114311</td>
-                            <td>6</td>
+                        <tr data-img-number="1">
+                            <td>1</td>
+                            <td>hero_img</td>
+                            <td>1280</td>
+                            <td>600</td>
+                            <td>
+                                <div class="mb-3 form-check form-switch d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="programActiveToggle" checked>
+                                </div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>Mariam Hesham</td>
-                            <td>Mariam@info.com</td>
-                            <td>01001114322</td>
-                            <td>7</td>
+                        <tr data-img-number="2">
+                            <td>2</td>
+                            <td>SOH_logo</td>
+                            <td>400</td>
+                            <td>200</td>
+                            <td>
+                                <div class="mb-3 form-check form-switch d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="programActiveToggle" checked>
+                                </div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>Mina Abdelkarim</td>
-                            <td>Mina@info.com</td>
-                            <td>01001114333</td>
-                            <td>9</td>
+                        <tr data-img-number="3">
+                            <td>3</td>
+                            <td>twitter_widget</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>
+                                <div class="mb-3 form-check form-switch d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="programActiveToggle" checked>
+                                </div>
+                            </td>
                         </tr>
                     </table>
-                    <p class="text-center fs-5">A huge thanks to our contributors for their support. They mean a lot to us as they help us lead the future for all children.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 p-4 ">
-                <div class="card-body p-4 shadow-sm rounded">
-                    <h3 class="fw-bold">Details Form</h3>
-                    <form class="form-control">
-                        <div class="mb-3">
-                            <label for="FullName" class="form-label fw-bold">Full Name:</label>
-                            <input type="text" name="fname" id="full_name" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Email" class="form-label fw-bold">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label fw-bold">Phone Number:</label>
-                            <input type="number" name="phone" id="phone" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="id" class="form-label fw-bold">ID:</label>
-                            <input type="number" name="id" id="id" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <input type="button" value="Add" onclick="addNewRecord();" class="btn btn-primary me-2 w-25">
-                            <input type="button" value="Edit" onclick="updateRecord();" class="btn btn-warning me-2 w-25">
-                            <input type="button" value="Remove" onclick="deleteRecord();" class="btn btn-danger w-25">
-                        </div>
-                    </form>
-                </div>
-            </div>
+
         </div>
     </div>
+
 </body>
 
 </html>

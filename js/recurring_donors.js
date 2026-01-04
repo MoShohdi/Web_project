@@ -17,8 +17,8 @@ function checkEmptyInput() {
     var isEmpty = false,
         full_name = input1.value,
         email = input2.value,
-        monthly_donations = input3.value;
-    donation_date = input4.value;
+        monthly_donations = input3.value,
+        donation_date = input4.value;
 
     if (email === "") {
         alert("email Connot Be Empty");

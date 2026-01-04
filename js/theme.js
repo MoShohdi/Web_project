@@ -1,6 +1,5 @@
-// theme.js - Single-object settings logic
 window.onload = function() {
-    // 1. Load the "Current" settings (Dummy data for now)
+    // dummy data
     document.getElementById('primaryColor').value = "#0284C7";
     document.getElementById('secondaryColor').value = "#333333";
     document.getElementById('fontChoice').value = "sans-serif";
@@ -8,6 +7,7 @@ window.onload = function() {
 }
 
 function saveThemeSettings() {
+    //save the values of the new theme
     const themeData = {
         color: document.getElementById('primaryColor').value,
         secondaryColor: document.getElementById('secondaryColor').value,
