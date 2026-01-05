@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awareness Articles - Seed of Hope Backend</title>
+    <title>Seed of Hope Backend</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../style.css">
-    <script src="../js/script.js"></script>
+    <script src="../script.js"></script>
+    <script src="../js/campaigns.js"></script>
 </head>
 
 <body>
@@ -34,23 +37,7 @@
             <nav class="col-lg-2 col-md-2 bg-body p-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="index_back.html">Dashboard Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#content">
-                            Content ▾
-                        </a>
-                        <div class="collapse show" id="content">
-                            <ul class="nav flex-column ps-3">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Blog.html">Blog Posts</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold text-dark" href="awareness.html">Awareness Articles</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a class="nav-link text-dark fw-bold" href="index_back.html">Dashboard Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -63,7 +50,7 @@
                                     <a class="nav-link" href="view_all_donation.html">View All Donations</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Campaigns</a>
+                                    <a class="nav-link active fw-bold" href="campaigns.html">Campaigns</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="recurring_donors.html">Recurring Donors</a>
@@ -85,7 +72,7 @@
                                     <a class="nav-link" href="team_members.html">Team Members</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Sponsors</a>
+                                    <a class="nav-link" href="sponsors.html">Sponsors</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="team_jobs.html">Team Jobs</a>
@@ -106,9 +93,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="theme.html">Theme</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="image_setting.html">Image Settings</a>
-                                </li>
+
                             </ul>
                         </div>
                     </li>
@@ -118,7 +103,7 @@
                             Payment ▾
                         </a>
                         <div class="collapse" id="payment">
-                            <ul class="nav flex-column ps-3">
+                            <ul class="nav flex-column ps3">
                                 <li class="nav-item">
                                     <a class="nav-link" href="card.html">Payment Methods</a>
                                 </li>
@@ -130,26 +115,29 @@
                     </li>
                 </ul>
             </nav>
-            <div class="col-lg-10 col-md-10 p-4 ">
-                <h2>Awareness Articles</h2>
-                <div class="card p-4 shadow-sm">
-                    <div class="text-center mb-4">
-                        <img src="../images/Awareness.jpg" class="img-fluid rounded" style="max-height: 300px;">
-                        <h3 class="mt-3">Raising Awareness Through Technology</h3>
-                    </div>
-                    <div class="alert alert-info">
-                        Awareness campaigns help organizations communicate their mission clearly and reach a wider audience using digital platforms.
-                    </div>
 
-                    <div class="card p-4 shadow-sm">
-                        <p>Technology plays a major role in spreading awareness about important social and charitable causes. Websites allow organizations to share information effectively with the public.</p>
-                        <p>Through online platforms, users can learn about different initiatives, understand their impact, and participate in awareness activities.</p>
-                        <p>Using modern web technologies increases visibility and encourages community engagement, making awareness campaigns more successful.</p>
-                    </div>
-                </div>
+            <div class="col-lg-10 col-md-9 p-4 ">
+                <h2>Campaigns Management</h2>
+                <p>Manage donation campaigns.</p>
+                <button class="btn btn-primary mb-3" onclick="addCampaign()">Add New Campaign</button>
+
+                <table class="table table-bordered" id="campaignTable">
+                    <tr>
+                        <th>Campaign Name</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Food Donation</td>
+                        <td>Helping families in need</td>
+                        <td>Active</td>
+                    </tr>
+                </table>
             </div>
+
         </div>
     </div>
+
 </body>
 
 </html>
